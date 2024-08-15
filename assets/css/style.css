@@ -131,6 +131,57 @@ body {
   -webkit-text-fill-color: var(--primary);
 }
 
+.section__title {
+  background: linear-gradient(
+      78deg,
+      rgb(255, 255, 255) 9.07%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.5) 90.93%
+    )
+    text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: ClashGrotesk;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 24px;
+  }
+}
+
+.section__title span {
+  -webkit-text-fill-color: var(--primary);
+}
+
+/* SECTION GRADIENT */
+
+.section {
+  background: linear-gradient(107.08deg, #190d2e 0.54%, #020103 99.46%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 76px 50px;
+}
+
+@media screen and (max-width: 1240px) {
+  .section {
+    padding: 32px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 32px 12px;
+  }
+}
+
+/* ABOUT */
+
+/* FOOTER */
+
 footer > .box {
   padding-top: 60px;
   padding-bottom: 20px;
