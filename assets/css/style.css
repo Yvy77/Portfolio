@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #9747ff;
+}
+
+a,
+a:visited,
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9747ff;
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "ClashGrotesk";
+  src: url("../fonts/ClashGrotesk.woff2") format("woff2");
+  font-style: normal;
+}
+
+html {
+  font-family: Inter, "sans-serif";
+  background-color: #000000;
+}
+
+.container {
+  padding: 0px 12px;
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    padding: 0px 6px;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #000000;
+}
+
+.box {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+
+.navbar {
+  z-index: 999;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background: linear-gradient(107.08deg, #190d2e 0.54%, #020103 99.46%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar i {
+  font-size: 24px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero img {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: -5%;
+  width: 170%;
+  height: 130%;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 10;
+  padding: 150px 20px;
+}
+
+.hero__title {
+  background: linear-gradient(
+      78deg,
+      rgb(255, 255, 255) 9.07%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.5) 90.93%
+    )
+    text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: ClashGrotesk;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+  }
+}
+
+.hero__title span {
+  -webkit-text-fill-color: var(--primary);
+}
+
+footer > .box {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+footer header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.footer__links > a {
+  border: 1px solid #ffffff26;
+  border-radius: 6px;
+  padding: 12px 18px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  flex: 1;
+  text-align: center;
+}
+
+.footer__links > a:hover {
+  border: 1px solid #9747ff;
+}
